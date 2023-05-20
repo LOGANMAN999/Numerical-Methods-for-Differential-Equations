@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Logan Singerman
 # 5/1/2023
-# Numerical Methods for Differential Equations Final Project
+# Numerical Methods for Differential Equations 
 
 """
 Required Libraries:
@@ -29,7 +29,7 @@ After installing the libraries, you should be able to run this script without is
 
 
 
-### Question 1
+
 
 # Exact solution and derivatives used in methods
 def function_1_exact(t):
@@ -126,7 +126,7 @@ plt.title("Exact Solution, TS3, and TS4")
 plt.legend()
 #plt.show()
 
-### Question 2
+
 
 def function_2_prime(t, x):
     return -20 * x
@@ -249,7 +249,7 @@ plt.grid()
 plt.axis('equal')
 #plt.show()
 
-### Question 3
+
 
 def function_3_exact(t):
     return t - (np.exp(-40)-np.exp(-40*(1-t)))/1-np.exp(-40)
@@ -297,7 +297,7 @@ plt.legend()
 data_FD = pd.DataFrame({"h": h3, "Max Difference": max_differences})
 print(data_FD)
 
-### Question 4
+
 
 ub = lambda x: np.sin(np.pi * x) - np.sin(3 * np.pi * x)
 uleft = lambda t: 0
